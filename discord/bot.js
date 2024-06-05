@@ -667,7 +667,7 @@ client.on("interactionCreate", async (interaction) => {
                     });
 
                     await defer(interaction);
-                    await interaction.followUp("Tôi cầu chúc cho bạn mỗi ngày đều vui vẻ cười tươi như bundle smite vậy! ")
+                    await interaction.followUp("Mọi dữ liệu cache(user info) chỉ tồn tại trong 50s nên mọi người phải /login lại sao mỗi lần /shop ( cz'toisapchetdoimongmoinguoithongcam)")
                     const message = await fetchShop(interaction, valorantUser, targetUser.id);
                     await interaction.followUp(message);
                     console.log(`Sent ${targetUser.tag}'s shop!`); // also logged if maintenance/login failed
